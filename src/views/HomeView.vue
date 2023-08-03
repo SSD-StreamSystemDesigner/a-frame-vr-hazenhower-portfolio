@@ -1,12 +1,12 @@
 <template>
     <a-scene>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="1000" height="1000" color="green"></a-plane>
+      <a-plane src="/texture/sampietrino3.jpg" position="0 0 -4" rotation="-90 0 0" width="1000" height="1000"></a-plane>
       <a-sky radius="1000"  color="#87CEEB"></a-sky>
       <a-camera look-controls wasd-controls cursor="rayOrigin: mouse" position="0 20 0"></a-camera>
       <a-entity laser-controls="hand: left" ></a-entity>
       <a-entity laser-controls="hand: right" ></a-entity>
-      <a-light type="ambient" intensity="0.7" color="#eea500"></a-light>
-      <a-light type="directional" color="#eea500" light="castShadow:true;" intensity="0.4" position="-5 3 1.5"></a-light>
+      <a-light type="ambient" intensity="0.5" color="#eea500"></a-light>
+      <a-light type="point" intensity="1" light="castShadow:true;" position="0 150 50"></a-light>
     
       <!-- modelli 3d -->
       <a-gltf-model src="/models/house/scene.gltf" position="345, 0, 355" scale="0.35 0.35 0.35" rotation="0 180 0"></a-gltf-model>
