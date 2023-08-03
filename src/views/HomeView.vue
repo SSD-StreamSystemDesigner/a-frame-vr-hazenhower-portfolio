@@ -1,5 +1,5 @@
 <template>
-    <a-scene>
+    <a-scene renderer="antialias: true;">
       <a-plane src="/texture/sampietrino3.jpg" position="0 0 -4" rotation="-90 0 0" width="1000" height="1000"></a-plane>
       <a-sky radius="1000"  color="#87CEEB"></a-sky>
       <a-camera look-controls wasd-controls cursor="rayOrigin: mouse" position="0 20 0"></a-camera>
